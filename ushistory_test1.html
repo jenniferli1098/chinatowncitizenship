@@ -53,20 +53,35 @@
       <h1>Test #1</h1>
       <p> Below are 20 multiple choice questions. Select the correct answer. If your answer is incorrect, the answer choice will become red. Try again!</p>
       <h4>HIHI</h4>
-      <button id="t1">True</button>
-      <button id="f1">False</button>
+      <button id="a1">Answer 1</button>
+      <br/>
+      <button id="b1">Answer 2</button>
+      <br/>
+      <button id="c1">Answer 3</button>
+      <br/>      
+      <button id="d1">Answer 4</button>
       <br/>
       <br/>
       <script>
-        document.querySelector('#t1').onclick = function() {
-          document.querySelector("#t1").style.backgroundColor = "#ed7168";
-        }
+        document.querySelector('#a1').onclick = function() {
+          document.querySelector("#a1").style.backgroundColor = "#ed7168";
+        } /*incorrect answer*/
       </script>
       <script>
-        document.querySelector('#f1').onclick = function() {
-          document.querySelector("#f1").innerHTML = "Correct! :)";
-        }
+        document.querySelector('#b1').onclick = function() {
+            document.querySelector("#b1").style.backgroundColor = "##59ff8b";
+        } /*correct answer*/
       </script>
+       <script>
+            document.querySelector('#c1').onclick = function() {
+              document.querySelector("#c1").style.backgroundColor = "#ed7168";
+            } /*incorrect answer*/
+      </script>
+      <script>
+            document.querySelector('#d1').onclick = function() {
+              document.querySelector("#d1").style.backgroundColor = "#ed7168";
+            } /*incorrect answer*/
+      </script>     
 
       <h4>HIHI</h4>
       <button id="t2">True</button>
