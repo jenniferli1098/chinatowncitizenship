@@ -56,15 +56,36 @@ section {
   transform: rotateY(180deg);
 }
 
-button{
-  font-size: 16px;
-  background-color: #3d9bff;
-  color: #fff;
-  border: 0px;
-  border-radius: 3px;
+.word {
+  text-align: center;
   padding: 10px;
-  cursor: pointer;
+  line-height: 200px;
+  vertical-align: middle;
 }
-button:hover{
-  background-color: #176ffd;
+
+.definition {
+  text-align: center;
+  padding: 10px;
+  line-height: 200px;
+  vertical-align: middle;
+}
+
+
+
+/********TOOL TIP***************/
+.dots {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color: black;
+}
+
+.dots:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+.three-col td {
+  width: 33%
 }
