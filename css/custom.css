@@ -85,3 +85,8 @@ section {
   color: black;
   text-decoration: none;
 }
+
+
+.three-col td {
+  width: 33%
+}
