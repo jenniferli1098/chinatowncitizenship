@@ -89,3 +89,17 @@ section {
 .three-col td {
   width: 33%
 }
+
+/*******Buttons :D*********/
+button{
+  font-size: 16px;
+  background-color: #3d9bff;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #176ffd;
+}
