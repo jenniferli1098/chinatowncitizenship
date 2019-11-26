@@ -45,11 +45,64 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>US History Test</h1>
-      <p class="lead">This test consists of 20 questions pulled out of a test bank</p>
+      <p class="lead">This test consists of 20 questions pulled out of a test bank!</p>
     </div>
   </header>
   <!-- Page Content -->
   <div class="container">
+      <script type="text/javascript">
+        
+        var QuesResp = [
+          ['Dog','Cat'],     ['King','Queen'],  ['TV','Radio'],     ['Flashlight','Candle'], ['Book','Tablet'],
+          ['Desk','Chair'],  ['Guitar','Banjo'],['Jester','Clown'], ['Coffee','Tea'],        ['Coat','Pants'],
+          ['Clock','Watch'], ['Rain','Snow'],   ['Rats','Mice'],    ['Tie','Scarf'],         ['Hat','Cap'],
+          ['Loafers','Wingtips'],  ['Phamphlet','Magazine'],        ['Cup','Pint'],          ['Gallon','Liter'],  ['Keyboard','Stylus'],
+          ['Chair','Table'], ['Pen','Pencil'],  ['Box','Circle'],   ['Triangle','Rectangle'],['Gun','Knife'] // no comma after last entry
+        ];
+        </script>
+        
+        </head>
+        <body>
+        <div id="QuestionsResponses"></div>
+        
+        <script type="text/javascript">
+        var maxQues = 20;
+        var QRpointers = [];
+        
+        function randOrd() { return (Math.round(Math.random())-0.5); } // quick and dirty randomizer (not the best)
+        
+        window.onload = function() {
+          for (var i=0; i<QuesResp.length; i++) { QRpointers.push(i); }
+          QRpointers.sort(randOrd);                                    // better randomizers are available
+        
+          var str = '<h1>Exam</h1>';
+          for (var Q=0; Q<maxQues; Q++) {
+            str += 'Question #'+(Q+1)+'<br>';
+            str += QuesResp[QRpointers[Q]][0];
+        //    str += ' <input type="text" id="R'+Q+'" value="' +QuesResp[QRpointers[Q]][1]+ '"><p>';
+            str += ' <input type="text" id="R'+Q+'"><p>';
+          }
+          str += '<INPUT value="CHECK ALL" type="button" onclick="scoreme()">';
+          str += '<INPUT id="score" type="text" size="8">';
+          document.getElementById('QuestionsResponses').innerHTML = str;
+        }
+        function scoreme() {
+          var sum = 0;  var total=maxQues;
+          var corr, resp;
+          var sel = document.getElementById('QuestionsResponses').getElementsByTagName('input');  
+        
+          for (var i=0; i<sel.length-1; i++) {
+            corr = QuesResp[QRpointers[i]][1];
+            resp = sel[i].value;
+            if (resp != '') {
+              if ( (corr.toLowerCase().indexOf(resp.toLowerCase()) ) != -1) { sum++; }  // for part match
+        //      if (corr.toLowerCase() == resp.toLowerCase()) { sum++; }                  // for EXACT match
+        //      if (corr == resp) { sum++; }                                              // for EXACT CASE match
+            }
+          }
+          document.getElementById('score').value = ((sum/maxQues)*100).toFixed(0)+'%';
+        }
+        </script>
 
   </div>
   <!-- /.container -->
