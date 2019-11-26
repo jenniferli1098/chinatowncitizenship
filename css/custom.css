@@ -105,6 +105,6 @@ button{
 button:hover{
   background-color: #fcffd9;
 }
-.btn-group dropright{
+.dropdownbutton{
   width: 200px;
 }
