@@ -35,6 +35,7 @@ section {
   transform: rotateY(180deg);
 }
 
+
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -45,13 +46,27 @@ section {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: rgb(142, 213, 255);
+  color: white;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(128, 191, 255);
   color: white;
   transform: rotateY(180deg);
+}
+
+.word {
+  text-align: center;
+  padding: 10px;
+  line-height: 200px;
+  vertical-align: middle;
+}
+
+.definition {
+  text-align: center;
+  padding: 10px;
+  line-height: 200px;
+  vertical-align: middle;
 }
