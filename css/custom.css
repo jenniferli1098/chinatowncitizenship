@@ -70,3 +70,18 @@ section {
   line-height: 200px;
   vertical-align: middle;
 }
+
+
+
+/********TOOL TIP***************/
+.dots {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color: black;
+}
+
+.dots:hover {
+  color: black;
+  text-decoration: none;
+}

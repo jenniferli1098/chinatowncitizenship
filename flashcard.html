@@ -19,6 +19,7 @@
   <!-- Flashcard JS -->
   <script src="source.js"></script>
 
+
 </head>
 
 <body id="page-top">
@@ -108,10 +109,20 @@
         <div class="col-lg-8 mx-auto">
           <h2>Review</h2>
         </div>
+        <div class="col-lg-8 mx-auto">
+          <h2>Hello</h2>
+          <p>Hello how are you</p>
+          <p><a href="#" data-toggle="tooltip" title="ni hao" class="dots">Hello</a>
+            how are you?
+
+
+          </p>            
+
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
@@ -128,8 +139,11 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
 </body>
 
