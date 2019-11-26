@@ -99,7 +99,8 @@ button{
   border-radius: 1px;
   padding: 8px;
   cursor: pointer;
-  width: 1200px;
+  width: 800px;
+  text-align: left
 }
 button:hover{
   background-color: #fcffd9;
