@@ -90,6 +90,10 @@ section {
   width: 33%
 }
 
+.two-col td {
+  width: 50%
+}
+
 /*******Buttons :D*********/
 .answerchoice{
   font-size: 16px;
