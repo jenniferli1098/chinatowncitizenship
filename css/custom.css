@@ -70,7 +70,14 @@ section {
   vertical-align: middle;
 }
 
-.question {
+.questionus {
+  text-align: center;
+  padding: 10px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 20pt;
+}
+.answerus {
   text-align: center;
   padding: 10px;
   line-height: 30px;
@@ -78,6 +85,17 @@ section {
   font-size: 20pt;
 }
 
+.flip-card-frontus {
+  background-color: #f0f2f0;
+  color: dodgerblue;
+}
+
+/* Style the back side */
+.flip-card-backus {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
 
 
 /********TOOL TIP***************/
