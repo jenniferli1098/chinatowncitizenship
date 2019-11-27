@@ -76,7 +76,7 @@ section {
 
 .question{
   text-align: center;
-  padding: 200px;
+  padding: 100px;
   line-height: 50px;
   vertical-align: center;
   font-size: 30pt;
@@ -84,7 +84,7 @@ section {
 
 .answer{
   text-align: center;
-  padding: 200px;
+  padding: 100px;
   line-height: 50px;
   vertical-align: center;
   font-size: 30pt;
