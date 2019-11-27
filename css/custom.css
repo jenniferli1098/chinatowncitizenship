@@ -53,7 +53,7 @@ section {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #f0f2f0;
+  background-color: white;
   color: dodgerblue;
   vertical-align: middle;
   transform: rotateY(180deg);
@@ -79,7 +79,6 @@ section {
   line-height: 30px;
   vertical-align: middle;
   font-size: 20pt;
-  color: dodgerblue;
 }
 
 .answer{
