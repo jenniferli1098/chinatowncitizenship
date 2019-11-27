@@ -78,6 +78,14 @@ section {
   font-size: 20pt;
 }
 
+.answer{
+  text-align: center;
+  padding: 10px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 20pt;
+}
+
 
 
 /********TOOL TIP***************/
