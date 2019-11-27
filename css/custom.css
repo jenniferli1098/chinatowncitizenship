@@ -70,6 +70,14 @@ section {
   vertical-align: middle;
 }
 
+.question{
+  text-align: center;
+  padding: 10px;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 30pt;
+}
+
 
 
 /********TOOL TIP***************/
