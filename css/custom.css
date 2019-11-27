@@ -45,10 +45,9 @@ section {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: white;
+  background-color: #e8e8e8;
   color: dodgerblue;
   vertical-align: middle;
-  border: 1px solid black;
 
 }
 
