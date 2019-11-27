@@ -45,16 +45,16 @@ section {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #f0f2f0;
-  color: black;
+  background-color: dodgerblue;
+  color: white;
   vertical-align: middle;
 
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #f0f2f0;
+  color: dodgerblue;
   vertical-align: middle;
   transform: rotateY(180deg);
 }
