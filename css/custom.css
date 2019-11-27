@@ -79,7 +79,7 @@ section {
 .question{
   text-align: center;
   padding: 10px;
-  line-height: 30px;
+  line-height: 50px;
   vertical-align: middle;
   font-size: 30pt;
 }
@@ -87,7 +87,7 @@ section {
 .answer{
   text-align: center;
   padding: 10px;
-  line-height: 30px;
+  line-height: 50px;
   vertical-align: middle;
   font-size: 30pt;
 }
