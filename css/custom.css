@@ -103,5 +103,9 @@ section {
   text-align: left
 }
 button:hover{
-  background-color: #fcffd9;
+  background-color: #ebebeb;
+}
+
+.dropdown-item{
+  padding: 8px
 }
