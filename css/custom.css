@@ -56,7 +56,6 @@ section {
   background-color: dodgerblue;
   color: white;
   vertical-align: middle;
-
   transform: rotateY(180deg);
 }
 
@@ -80,6 +79,7 @@ section {
   line-height: 30px;
   vertical-align: middle;
   font-size: 20pt;
+  color: dodgerblue;
 }
 
 .answer{
