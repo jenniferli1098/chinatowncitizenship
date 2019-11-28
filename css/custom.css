@@ -83,6 +83,16 @@ section {
 .dots {
   position: relative;
   display: inline-block;
+}
+
+.dots:hover {
+  background-color: lightgreen;
+}
+
+/* This is the previous one in case we wanna revert
+.dots {
+  position: relative;
+  display: inline-block;
   border-bottom: 1px dotted black;
   color: black;
 }
@@ -91,6 +101,7 @@ section {
   color: black;
   text-decoration: none;
 }
+*/
 
 
 .three-col td {
