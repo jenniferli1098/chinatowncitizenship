@@ -60,29 +60,17 @@ section {
 
 }
 
-.word {
-  text-align: center;
-  padding: 10px;
-  line-height: 30px;
-  vertical-align: middle;
-}
-
-.definition {
-  text-align: center;
-  padding: 10px;
-  line-height: 30px;
-  vertical-align: middle;
-}
 
 .question{
+  padding: 100px;
   text-align: center;
-  padding: 80px;
   line-height: 50px;
   vertical-align: center;
   font-size: 30pt;
 }
 
 .answer{
+  padding: 120px;
   text-align: center;
   line-height: 50px;
   vertical-align: center;
