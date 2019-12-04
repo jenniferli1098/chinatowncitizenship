@@ -64,7 +64,7 @@
     </head>
 
     <body>
-      <div id="QuestionsResponses">
+      <div id="QuestionsResponses"></div>
 
       <script type="text/javascript">
         var maxQues = 10;
@@ -76,7 +76,7 @@
           for (var i = 0; i < QuesResp.length; i++) { QRpointers.push(i); }
           QRpointers.sort(randOrd);                                    // better randomizers are available
 
-          var str = '<h1>Exam</h1>';
+          var str = '<br><h1>Exam</h1><br>';
           for (var Q = 0; Q < maxQues; Q++) {
             str += '<h5>' + (Q + 1) + '. ';
             str += QuesResp[QRpointers[Q]][0];
@@ -84,7 +84,7 @@
             str += '</h5><input type="text" id="R' + Q + '"><p>';
           }
           str += '<INPUT value="Submit" id="submit" type="button" onclick="scoreme()">';
-          str += '<INPUT id="score" type="text" size="8">';
+          str += '<INPUT id="score" type="text" style="border: 0px;background: transparent;" size="8">';
           document.getElementById('QuestionsResponses').innerHTML = str;
         }
         function scoreme() {
@@ -114,7 +114,7 @@
           $("#submit").addClass("incompleteans");
           $("#submit").val("Submit");
           $("#submit").attr("disabled", true);
-          document.getElementById('score').value = ((sum / maxQues) * 100).toFixed(0) + '%';
+          document.getElementById('score').value = 'You scored '+((sum / maxQues) * 100).toFixed(0) + '%';
         }
       </script>
 
