@@ -245,3 +245,21 @@ button:hover {
 .black {
   background: #000000;
 }
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.correctans {
+  background-color: rgb(213, 255, 213);
+}
+
+.wrongans {
+  background-color: rgb(255, 206, 206);
+}
+.incompleteans {
+  background-color: rgb(219, 219, 219);
+}

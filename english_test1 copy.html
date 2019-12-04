@@ -95,9 +95,12 @@
             corr = QuesResp[QRpointers[i]][1];
             resp = sel[i].value;
             if (resp != '') {
-              if ( (corr.toLowerCase().indexOf(resp.toLowerCase()) ) != -1) { sum++; }  // for part match
-        //      if (corr.toLowerCase() == resp.toLowerCase()) { sum++; }                  // for EXACT match
-        //      if (corr == resp) { sum++; }                                              // for EXACT CASE match
+              if (corr.toLowerCase() == resp.toLowerCase()) {
+                sum++;
+              }
+              else {
+                //show correct answer next to text field
+              }
             }
           }
           document.getElementById('score').value = ((sum/maxQues)*100).toFixed(0)+'%';
