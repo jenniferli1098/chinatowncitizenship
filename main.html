@@ -9,6 +9,7 @@
   <meta name="author" content="">
 
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -21,20 +22,23 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Chinatown Citizenship</a>
+      <a class="navbar-brand js-scroll-trigger" href="main.html">Chinatown Citizenship</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link active" href="main.html">Home</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="english.html">English</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ushistory.html">US History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="n400.html">N400</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="other.html">Other Resources</a>
           </li>
         </ul>
       </div>
@@ -48,46 +52,113 @@
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Chinatown Citizenship</h2>
-          <p class="lead">PBHA’s Chinatown Citizenship is a naturalization assistance program serving Boston’s Chinatown community. Chinatown Citizenship promotes social and political empowerment for Chinatown immigrants by providing support throughout the naturalization process for U.S. citizenship. The program’s services include courses in U.S. history and government, mock interviews, translations, and resources such as practice audio CDs.</p>
-        </div>
+<section>
+<div class="container">
+  <br>
+  <h3 class="text-center">Subjects</h3>
+  <hr></hr>
+  <br>
+<div class="row text-center">
+    <!-- English -->
+  <div class="col-lg-4 col-md-3 mb-4">
+    <div class="card h-100">
+        <img class="card-img-top" src = "images/eng_unit_3.jpg" alt = "">
+      <div class="card-body">
+        <h4 class="card-title">English</h4>
+        <p class="card-text">Learn English (for beginners)</p>
+              </div>
+      <div class="card-footer">
+        <a href="english.html" class="btn btn-primary">Study English</a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="services" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Resources on This Page</h2>
-          <ul>
-            <li>Beginner English – For beginners just beginning to learn English words.</li>
-            <li>US History – For students that have basic English knowledge and wish to learn the 100 questions that the interview might ask.</li>
-            <li>Flashcards</li>
-            <li>Exams</li> 
-            <li>Vocabulary</li>
-            <li>Reviews with Chinese translations</li>
-            <li>Audio</li>
-          </ul>
-        </div>
+<!-- N400 -->
+  <div class="col-lg-4 col-md-3 mb-4">
+    <div class="card h-100">
+        <img class="card-img-top" src = "images/n400.jpeg" alt = "">
+      <div class="card-body">
+        <h4 class="card-title">N400</h4>
+        <p class="card-text">Learn what's on the N400 form</p>
+              </div>
+      <div class="card-footer">
+        <a href="n400.html" class="btn btn-primary">Study N400</a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Feel free to send us emails if there are issues with our website! Our emails are jliang@college.harvard.edu and phylliszhang@college.harvard.edu</p>
-        </div>
+<!-- USH -->
+  <div class="col-lg-4 col-md-3 mb-4">
+    <div class="card h-100">
+        <img class="card-img-top" src = "images/systemofgovernment.png" alt = "">
+      <div class="card-body">
+        <h4 class="card-title">US History</h4>
+        <p class="card-text">Learn the 100 US history questions</p>
+              </div>
+      <div class="card-footer">
+        <a href="ushistory.html" class="btn btn-primary">Study US History</a>
       </div>
     </div>
-  </section>
+  </div>
+  </div>
+  <br></br>
+</div>
+  <div class="container">
+    <br>
+    <h3 class="text-center">Resources</h3>
+    <hr></hr>
+    <br>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" style = "margin:auto">
+        <div class="carousel-item active">
+          <img src="images/flashcards.jpeg" style = "height:400px; display: block;margin-left: auto; margin-right: auto;">
+          <div class="carousel-caption" style = "background-color: black; opacity: 0.75">
+            <h5>Flashcards</h5>
+            <p>In each unit, there are flashcards to help with vocabulary and memorization.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/test.png" style = "height:400px; display: block;margin-left: auto; margin-right: auto;">
+          <div class="carousel-caption" style = "background-color: black; opacity: 0.75">
+            <h5>Exams</h5>
+            <p>In each subject, there are exams to test the knowledge covered in the unit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/review.png" style = "height:400px; display: block;margin-left: auto; margin-right: auto;">
+          <div class="carousel-caption" style = "background-color: black; opacity: 0.75">
+            <h5>Reviews</h5>
+            <p>In each unit, there are materials to read over and to refresh vocabulary.</p>
+          </div>
+        </div>
+      <div class="carousel-item">
+        <img src="images/game.png" style = "height:400px; display: block;margin-left: auto; margin-right: auto;">
+        <div class="carousel-caption" style = "background-color: black; opacity: 0.75">
+          <h5>Games</h5>
+          <p>In each subject, there are fun games to review the material.</p>
+        </div>
+      </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+<br></br><br>
+
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
