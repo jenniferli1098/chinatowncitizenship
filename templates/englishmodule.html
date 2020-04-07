@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block title %}
-US History
+English
 {% endblock %}
 
 {% block main %}
@@ -64,21 +64,54 @@ US History
                 <p>Mouse over the English to view Chinese translations. (将鼠标悬停在英语上可以查看中文翻译。) </p>
             </div>
             <div class="col-lg-8 mx-auto">
-
-                {% for i in range(0,modules['size']) %}
+            {% for i in range(0,num_modules) %}
                 <h5>{{modules[i]['title']}}</h5>
-                <audio controls src="{{modules[i]['audiofile']}">
-                </audio>
-                {% for k in range(0,modules[i]['size]']) %}
-                <a data-toggle="tooltip"
+                
+                {% if modules[i]['style'] == 'table' %}
+                <table class="table table-borderless two-col">
+                    <tbody>
+                        {% for k in range(0,modules[i]['size']/2) %}
+                        <tr>
+                            <td><a data-toggle="tooltip"
+                                title="{{modules[i]['translations'][k]}}"
+                                class="dots">{{modules[i]['sentence'][k]}}
+                            </a></td>
+                            <td><a data-toggle="tooltip"
+                                title="{{modules[i]['translations'][k+1]}}"
+                                class="dots">{{modules[i]['sentence'][k+1]}}
+                            </a></td>
+                        </tr>
+                        {% endfor %}
+                      
+                    </tbody>
+                  </table>
+                {% elif modules[i]['style'] == 'qna' %}
+                    <!---For question and answer-->
+                    {% for k in range(0,modules[i]['size']/2) %}
+                    <a data-toggle="tooltip"
                     title= "{{modules[i]['translations'][k]}}"
                     class="dots">
                     {{modules[i]['sentence'][k]}}
-                </a>
-                {% endfor %}
+                    </a>
+                    <a data-toggle="tooltip"
+                    title= "{{modules[i]['translations'][k+1]}}"
+                    class="dots">
+                    {{modules[i]['sentence'][k+1]}}
+                    </a>
+                    {% endfor %}
+                {% else %}
+                    <!--This is for sentences-->
+                    {% for k in range(0,modules[i]['size']) %}
+                    <a data-toggle="tooltip"
+                    title= "{{modules[i]['translations'][k]}}"
+                    class="dots">
+                    {{modules[i]['sentence'][k]}}
+                    </a>
+                    {% endfor %}
+                {% endif %}
                 </br>
                 </br>
-                {% endfor %}
+            {% endfor %}
 
             </div>
 
