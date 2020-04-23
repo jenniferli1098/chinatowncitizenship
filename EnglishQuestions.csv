@@ -1,0 +1,53 @@
+﻿2005年 11月 15号,"November fifteen, two thousand and five",,,"April thirteen, twenty-twenty","September thirty, two thousand","August ten, twenty-nineteen","December twenty-five, nineteen-eighty"
+1979年 3月 24日,"March twenty-four, nineteen seventy-nine",,,"April thirteen, twenty-twenty","September thirty, two thousand","August ten, twenty-nineteen","December twenty-five, nineteen-eighty"
+1980年 12月 25日,"December twenty-five, nineteen-eighty",,,"April thirteen, twenty-twenty","September thirty, two thousand","August ten, twenty-nineteen","March twenty-four, nineteen seventy-nine"
+2019年 8月 10号,"August ten, twenty-nineteen",,,"April thirteen, twenty-twenty","September thirty, two thousand","March twenty-four, nineteen seventy-nine","December twenty-five, nineteen-eighty"
+2000年 9月 30日,"September thirty, two thousand",,,"April thirteen, twenty-twenty","March twenty-four, nineteen seventy-nine","August ten, twenty-nineteen","December twenty-five, nineteen-eighty"
+2020年 4月 13日,"April thirteen, twenty-twenty",,,"March twenty-four, nineteen seventy-nine","September thirty, two thousand","August ten, twenty-nineteen","December twenty-five, nineteen-eighty"
+请重复一遍。,Please repeat that.,,,How are you,I am feeling well,Please sit down,Please talk more loudly
+怎么?,How?,,,Why?,What?,Where?,How long?
+为什么?,Why?,,,When?,How?,Where?,Who?
+哪里?,Where?,,,Why?,How?,When?,Who?
+多久?,How long?,,,Why?,How?,Where?,Who?
+何时?,When?,,,Why?,How?,Where?,How long?
+多少岁?,How old?,,,Why?,How?,Where?,How long?
+什么?,What?,,,Why?,When?,Where?,How long?
+多少?,How many/much?,,,When?,What?,Where?,How long?
+谁?,Who?,,,When?,What?,Where?,How long?
+早上好,Good morning,,,Sunny,Weather,Good evening,Good afternoon
+下午好,Good afternoon,,,Sunny,Weather,Good evening,Good morning
+晚上好,Good evening,,,Sunny,Weather,Good morning,Good afternoon
+天气,Weather,,,Sunny,Good morning,Good evening,Good afternoon
+晴朗,Sunny,,,Good morning,Weather,Good evening,Good afternoon
+sunny,晴朗,,,多云,下雨,下雪,刮风
+raining,下雨,,,晴朗,多云,下雪,刮风
+snowing,下雪,,,晴朗,下雨,多云,刮风
+windy,刮风,,,晴朗,下雨,下雪,多云
+cloudy,多云,,,晴朗,下雨,下雪,刮风
+subway,地铁,,,出租车,公共汽车,汽车,自行车
+bus,公共汽车,,,出租车,地铁,汽车,自行车
+car,汽车,,,出租车,公共汽车,地铁,自行车
+bike,自行车,,,出租车,公共汽车,地铁,火车
+train,火车,,,出租车,公共汽车,地铁,自行车
+taxi,出租车,,,火车,公共汽车,地铁,自行车
+你的社会安全号码是什么?,What is your social security number?,,,When did you become a permanent resident?, How long have you been a permanent resident?,Why did you travel outside the United States?,Do you like living in America?
+When did you become a permanent resident?,你何时成为了美国永久居民 ?,,,你的社会安全号码是什么?,你喜欢住在美国吗? ,你已成为永久居民多长时间了? , 你为何离开美国?
+ How long have you been a permanent resident?,你已成为永久居民多长时间了? ,,,你的社会安全号码是什么?,你何时成为了美国永久居民 ?,你喜欢住在美国吗? , 你为何离开美国?
+Why did you travel outside the United States?, 你为何离开美国?,,,你的社会安全号码是什么?,你何时成为了美国永久居民 ?,你已成为永久居民多长时间了? ,你喜欢住在美国吗? 
+Do you like living in America?,你喜欢住在美国吗? ,,,你的社会安全号码是什么?,你何时成为了美国永久居民 ?,你已成为永久居民多长时间了? , 你为何离开美国?
+ 往左/右转,Turn left/right,,,Go down the hall,Please have a seat. ,Go around the corner, Wait right here
+沿这走廊走,Go down the hall,,,Please sit down and wait. ,Please have a seat. ,Go around the corner, Wait right here
+在拐角转,Go around the corner,,,Please sit down and wait. ,Please have a seat. ,Please sit down and wait. , Wait right here
+请在这儿等, Wait right here,,,Please sit down and wait. ,Please have a seat. ,Go around the corner,Please sit down and wait. 
+"你错了,请再试一次",That’s wrong/incorrect. Please try again.,,,Go down the hall,Tell me the answer,Go around the corner, Wait right here
+跟着那个女士/先生走,Go with that woman/lady/man. ,,,Go down the hall,Tell me the answer,Go around the corner, Wait right here
+告诉我答案,Tell me the answer,,,Go down the hall,Please have a seat. ,Go around the corner, Wait right here
+请坐下等,Please sit down and wait. ,,,Go down the hall,Please have a seat. ,Tell me the answer,Go with that woman/lady/man. 
+请坐下,Please have a seat. ,,,Go down the hall,Please sit down and wait. ,Tell me the answer,Go with that woman/lady/man. 
+Where do you live?,I live in Boston,,,I lived in Boston,I will live in Boston,I want to live in Boston,I want to go to Boston
+What do you do in your free time?, I like to read.,I like to sing,I like to dance,I am reading,I do not like to walk,I will sing tomorrow,I can read
+What do you do in your free time?,I like to cook.,I like to read,I like to surf the web,I am cooking dinner,I like living here,I want to dance,I would like to learn to dance
+How long have you lived there?,I have lived there for a year,I have lived here for a month,I have lived here for a while,I for a year have lived here,I live there for a year,"For a month, I live here",I live there for a month
+How is the weather today?,It is sunny,The weather is great,It is windy,It is happy,,,
+How is the weather today?,It is raining,It is windy,The weather is bad,The weather is snowing,,,
+How did you come here today?,I took the subway,I took a bus,I came by car,I come here by a bus,I go by train,,

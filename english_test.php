@@ -2,11 +2,11 @@
     include_once 'access.php';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
 
 <head>
 
-  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -62,6 +62,7 @@
     <p> Below are 10 multiple choice questions. Select a correct answer (there can be more than one). </p>
     <p>If your answer is incorrect, the answer choice will become red. Try again!</p>
     <?php
+    $sql = mysqli_query($conn, "SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
     $sql = "SELECT * FROM English\n"
     . "ORDER BY RAND()\n"
     . "LIMIT 10";
