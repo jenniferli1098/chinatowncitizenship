@@ -15,10 +15,21 @@ h6{
   font-style:oblique;
 
 }
+
+/* Banner section */
+
+.banner {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .carousel-inner > .item > img {
   margin: 0 auto;
 }
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .flip-card {
   background-color: transparent;
@@ -222,6 +233,8 @@ button:hover {
   border: 1px solid rgba(0, 0, 0, .2);
 }
 
+/* Colors */
+
 .blue {
   background: #1793cc;
 }
@@ -261,6 +274,7 @@ input[type=text] {
   box-sizing: border-box;
 }
 
+/* Quizzes */
 .correctans {
   background-color: rgb(213, 255, 213);
 }
