@@ -36,7 +36,7 @@ function head($num) { ob_start(); ?>
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>US History Module <?php echo $num ?></title>
+        <title>US History <?php echo $num ?></title>
 
         <!-- Bootstrap core CSS -->
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

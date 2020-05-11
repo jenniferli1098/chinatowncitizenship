@@ -5,7 +5,7 @@
 ?>
 <!DOCTYPE html>
 
-  <?php echo head(3)?>
+  <?php echo head("Module 3")?>
 
     <header class="bg-primary text-white">
         <div class="container text-center">

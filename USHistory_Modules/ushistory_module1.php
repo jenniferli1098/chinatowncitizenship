@@ -5,7 +5,7 @@
 ?>
 <!DOCTYPE html>
 
-  <?php echo head(1)?>
+  <?php echo head("Module 1")?>
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>What is America?</h1>
