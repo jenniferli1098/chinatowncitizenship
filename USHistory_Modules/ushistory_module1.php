@@ -1,3 +1,6 @@
+<?php
+    include_once '../access.php';
+?>
 <!DOCTYPE html>
 
 <head>
@@ -10,13 +13,13 @@
   <title>US History Module 1</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
 
   <!-- Flashcard JS -->
-  <script src="source.js"></script>
+  <script src="../source.js"></script>
 
 
 </head>
@@ -33,19 +36,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="english.html">English</a>
+            <a class="nav-link" href="../english.html">English</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link active" href="ushistory.html">US History</a>
+            <a class="nav-link active" href="../ushistory.html">US History</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="n400.html">N400</a>
+            <a class="nav-link" href="../n400.html">N400</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="other.html">Other Resources</a>
+            <a class="nav-link" href="../other.html">Other Resources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="../contact.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -58,33 +61,6 @@
       <p class="lead">Geography: States, Oceans, Capitals, Presidents, National Holidays, the Flag</p>
     </div>
   </header>
-  <?php
-  $sql = "SELECT * FROM USHistory\n"
-    . "ORDER BY RAND()\n"
-    . "LIMIT 10\n"
-    . "WHERE UNIT = 1\n";
-    $result = mysqli_query($conn, $sql);
-    $datas = array();
-    if (mysqli_num_rows($result) > 0){
-        while($row = mysqli_fetch_assoc($result)){
-            $datas[] = $row;
-        }
-    }
-    $i = 0;
-    foreach ($datas as $data){ ?>
-        <h5> <?php echo $data['Question']; ?> </h5> 
-        <?php $answers = array('C1', 'C2', 'C3');
-        shuffle($answers);
-        foreach ($answers as $answer) { ?>
-            <?php if ($data[$answer] != "") { ?> 
-                <button class = "answerchoice" id="<? echo $answer.$i ?>"><?php echo $data[$answer]; ?></button>
-                <div style="line-height:20%;">
-                <br>
-                </div>
-        <?php }; }; ?> 
-    <br>
-    <?php $i+=1; }; ?>
-    </div>
   <section id="flashcard">
     <div class="container">
       <div class="row">
@@ -96,15 +72,44 @@
                 <div class="flip-card d-block w-100">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <h1 class="question" style="padding: 100px;">What ocean is on the West Coast of the United States?
-                      </h1>
+                      <h1 class="question" style="padding: 100px;">Flashcards Instructions: <br /> Mouse over this card to flip.</h1>
                     </div>
                     <div class="flip-card-back">
-                      <p class="answer" style="padding: 120px;">Pacific Ocean</p>
+                      <p class="answer" style="padding: 100px;">Use the left and right arrows to switch to another card.</p>
                     </div>
                   </div>
                 </div>
               </div>
+            <?php
+              $sql = "SELECT * FROM USHistory WHERE Unit = 1";
+              $result = mysqli_query($conn, $sql);
+              $datas = array();
+              if (mysqli_num_rows($result) > 0){
+                  while($row = mysqli_fetch_assoc($result)){
+                      $datas[] = $row;
+                  }
+              }
+              $i = 0;
+              foreach ($datas as $data){ 
+                  $answers = array('C2', 'C3');
+                  $ans = $data['C1'];
+                  foreach ($answers as $answer) { ?>
+                      <?php if ($data[$answer] != "") { 
+                        $ans = $ans . ", " . $data[$answer]; }; 
+                  }; ?>
+                <div class="carousel-item">
+                  <div class="flip-card d-block w-100">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 class="question" style="padding: 100px;"><?php echo $data['Question']; ?></h1>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="answer" style="padding: 120px;"><?php echo $ans ?></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <?php $i+=1; }; ?>
             </div>
 
             <a class="carousel-control-prev" href="#flashCardControls" role="button" data-slide="prev"
@@ -247,11 +252,11 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <script>
     $(document).ready(function () {
