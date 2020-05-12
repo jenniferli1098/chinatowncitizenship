@@ -47,6 +47,7 @@ function head($num) { ob_start(); ?>
         <!-- Flashcard JS -->
         <script src="../source.js"></script>
         <script type="text/javascript" src="../attempts.js"></script>
+        <script type="text/javascript" src="../another_attempt.js"></script>
 
     </head>
 
