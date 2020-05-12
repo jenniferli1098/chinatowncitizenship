@@ -18,6 +18,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h3>Review</h3>
+          <button onclick="tr('chicken')">press this woah</button>
           <p>Mouse over the English to view Chinese translations. (将鼠标悬停在英语上可以查看中文翻译。) </p>
         </div>
         <div class="col-lg-8 mx-auto">
