@@ -14,7 +14,7 @@
     const text = 'Hello!';
 
     // The target language
-    const target = 'ja';
+    const target = 'zh';
 
     const [translation] = await translate.translate(text, target);
 
