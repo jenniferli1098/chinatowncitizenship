@@ -1,19 +1,13 @@
-  /**
-   * TODO(developer): Uncomment the following line before running the sample.
-   */
-  const projectId = 'articulate-case-277023';
+const projectId = 'articulate-case-277023';
 
-  // Imports the Google Cloud client library
-  const {Translate} = require('@google-cloud/translate').v2;
+const {Translate} = require('@google-cloud/translate').v2;
 
-  // Instantiates a client
-  const translate = new Translate({projectId});
+const translate = new Translate({projectId});
 
-  async function tr(str) {
-    // The text to translate
+async function tr(str) {
+  
     const text = 'Hello!';
 
-    // The target language
     const target = 'zh';
 
     const [translation] = await translate.translate(text, target);
