@@ -17,12 +17,6 @@ function foot() { ob_start() ; ?>}
     <!-- Plugin JavaScript -->
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-
     </body>
 </html>
 <?php return ob_get_clean(); } 

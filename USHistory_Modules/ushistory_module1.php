@@ -28,12 +28,13 @@
           src="audio/geography.mp3">
           </audio>
           <br>
-          <a id="sad">To the north of the United States, there is Canada. Thirteen US States border Canada, and these
+          <a data-toggle="tooltip" title = "confused" id="sad" class="dots">To the north of the United States, there is Canada. Thirteen US States border Canada, and these
             include Maine, New Hampshire, Vermont, New York, Pennsylvania, Ohio, Michigan, Minnesota, North Dakota,
             Montana, Idaho, Washington, and Alaska. </a>
           <script>
             document.getElementById('sad').onclick = function() {
-              fetchChinese('sad', document.getElementById('sad').innerHTML); }
+              fetchChinese('sad', document.getElementById('sad').innerHTML);
+              $('[data-toggle="tooltip"]').tooltip();}
           </script>
           <a data-toggle="tooltip" title="在美国东部，有大西洋！ 欧洲在大西洋的对面" class="dots">To the east of the United States, there is
             the Atlantic Ocean! Across the Atlantic Ocean is Europe.</a>

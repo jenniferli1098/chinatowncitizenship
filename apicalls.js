@@ -8,7 +8,8 @@ function fetchChinese(idchange, str) {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
         myObj = JSON.parse(this.responseText);
-        document.getElementById(idchange).innerHTML = myObj.data.translations[0].translatedText;
+        alert(myObj.data.translations[0].translatedText);
+        $("#"+idchange).attr('data-original-title', myObj.data.translations[0].translatedText);
         }
     };
     xhttp.open("GET", url, true);
