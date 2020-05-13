@@ -19,7 +19,7 @@ function foot() { ob_start() ; ?>}
 
     <script>
         $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 
@@ -46,8 +46,7 @@ function head($num) { ob_start(); ?>
 
         <!-- Flashcard JS -->
         <script src="../source.js"></script>
-        <script type="text/javascript" src="../attempts.js"></script>
-        <script type="text/javascript" src="../another_attempt.js"></script>
+        <script type="text/javascript" src="../apicalls.js"></script>
 
     </head>
 

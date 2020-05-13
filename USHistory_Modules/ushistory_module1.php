@@ -18,7 +18,6 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h3>Review</h3>
-          <button onclick="fetchChinese('chicken')">whoops what is this</button>
           <p>Mouse over the English to view Chinese translations. (将鼠标悬停在英语上可以查看中文翻译。) </p>
         </div>
         <div class="col-lg-8 mx-auto">
@@ -28,11 +27,14 @@
           controls
           src="audio/geography.mp3">
           </audio>
-          <a data-toggle="tooltip"
-            title="在美国北部，有加拿大。 美国有13个州与加拿大接壤，其中包括缅因州，新罕布什尔州，佛蒙特州，纽约州，宾夕法尼亚州，俄亥俄州，密歇根州，明尼苏达州，北达科他州，蒙大拿州，爱达荷州，华盛顿州和阿拉斯加"
-            class="dots">To the north of the United States, there is Canada. Thirteen US States border Canada, and these
+          <br>
+          <a id="sad">To the north of the United States, there is Canada. Thirteen US States border Canada, and these
             include Maine, New Hampshire, Vermont, New York, Pennsylvania, Ohio, Michigan, Minnesota, North Dakota,
             Montana, Idaho, Washington, and Alaska. </a>
+          <script>
+            document.getElementById('sad').onclick = function() {
+              fetchChinese('sad', document.getElementById('sad').innerHTML); }
+          </script>
           <a data-toggle="tooltip" title="在美国东部，有大西洋！ 欧洲在大西洋的对面" class="dots">To the east of the United States, there is
             the Atlantic Ocean! Across the Atlantic Ocean is Europe.</a>
           <a data-toggle="tooltip"
