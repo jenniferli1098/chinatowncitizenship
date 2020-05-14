@@ -11,13 +11,14 @@
   <title>US History Module 1</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
 
   <!-- Flashcard JS -->
-  <script src="source.js"></script>
+  <script src="../source.js"></script>
+  <script src="../apicalls.js"></script>
 
 
 </head>
@@ -299,11 +300,11 @@
           src="audio/geography.mp3">
           </audio>
           <a data-toggle="tooltip"
-            title="在美国北部，有加拿大。 美国有13个州与加拿大接壤，其中包括缅因州，新罕布什尔州，佛蒙特州，纽约州，宾夕法尼亚州，俄亥俄州，密歇根州，明尼苏达州，北达科他州，蒙大拿州，爱达荷州，华盛顿州和阿拉斯加"
+            title="" id="sad1" onclick="test('1');"
             class="dots">To the north of the United States, there is Canada. Thirteen US States border Canada, and these
             include Maine, New Hampshire, Vermont, New York, Pennsylvania, Ohio, Michigan, Minnesota, North Dakota,
             Montana, Idaho, Washington, and Alaska. </a>
-          <a data-toggle="tooltip" title="在美国东部，有大西洋！ 欧洲在大西洋的对面" class="dots">To the east of the United States, there is
+          <a data-toggle="tooltip" id="sad2" onclick="test('2');"" class="dots">To the east of the United States, there is
             the Atlantic Ocean! Across the Atlantic Ocean is Europe.</a>
           <a data-toggle="tooltip"
             title="在美国南部，有墨西哥。 美国有四个州与墨西哥接壤，其中包括德克萨斯州，新墨西哥州，亚利桑那州和加利福尼亚州。 在1800年代美墨战争之后，美国从墨西哥获得了这片土地。" class="dots">To
@@ -320,6 +321,18 @@
             there is the Statue of Liberty.</a>
           </br>
           </br>
+
+          <script>
+            function test(k) {
+              //alert("hi");
+              
+              alert(document.getElementById('sad'+k).innerHTML);
+              
+              fetchChinese('sad'+k, document.getElementById('sad'+k).innerHTML);
+              $('[data-toggle="tooltip"]').tooltip();
+              
+            }
+          </script>
 
           <h5>People</h5>
           <audio
