@@ -1,0 +1,2 @@
+module 1
+$Cardinal = array("Cardinal Numbers","One","Eleven","Thirty","Two","Twelve,"Forty","Three","Thirteen","Fifty","Four","Fourteen","Sixty","Five","Fifteen","Seventy","Six","Sixteen","Eighty","Seven","Seventeen","Ninety","Eight","Eighteen","One Hundred","Nine","Nineteen","One Thousand","Ten","Twenty","One Million")
