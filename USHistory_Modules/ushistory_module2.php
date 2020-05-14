@@ -29,13 +29,19 @@
               controls
               src="audio/colonial period - ch2.mp3">
               </audio>
-                <a data-toggle="tooltip" title="1600年代，英国人来到美国。" class="dots">The British came to America in the 1600s.</a>
+                <a data-toggle="tooltip" title="loading" id="sad" class="dots">The British came to America in the 1600s.</a>
                 <a data-toggle="tooltip" title="他们来到美国的原因有很多：自由，政治自由，宗教自由，经济机会以及逃避迫害。" class="dots">They came to America for many reasons: freedom, political liberty, religious freedom, economic opportunity, and to escape persecution.</a>
                 <a data-toggle="tooltip" title="当他们来到美国，美洲原住民（美洲印第安人）已经居住在美国。" class="dots">When they came to America, Native Americans (American Indians) were already living in the US.</a>
                 <a data-toggle="tooltip" title="这些美洲原住民是许多不同部落的一部分。 它们包括：切诺基，纳瓦霍，苏族，奇珀瓦，乔克托，普韦布洛，阿帕奇，易洛魁河，克里克，黑脚，塞米诺尔，夏安，阿拉瓦克，肖尼，莫赫根，休伦，奥尼达，拉科塔，乌鸦，提顿和霍皮族。" class="dots">These Native Americans were a part of many different tribes. They included: Cherokee, Navajo, Sioux, Chippewa, Choctaw, Pueblo, Apache, Iroquois, Creek, Blackfeet, Seminole, Cheyenne, Arawak, Shawnee, Mohegan, Huron, Oneida, Lakota, Crow, Teton, and the Hopi.</a>
                 <a data-toggle="tooltip" title="为了获得这块土地，欧洲人进行了战斗，并迫使美洲印第安人离开了他们的土地。" class="dots">In order to acquire this land, the Europeans fought and forced the Native Americans off their lands.</a>
                 <a data-toggle="tooltip" title="英国后来形成了13个殖民地：新罕布什尔州，马萨诸塞州，罗德岛州，康涅狄格州，纽约州，新泽西州，宾夕法尼亚州，特拉华州，马里兰州，弗吉尼亚州，北卡罗来纳州，南卡罗来纳州和乔治亚州。" class="dots">The British later formed 13 colonies: New Hampshire, Massachusetts, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina, and Georgia. </a>
-            </br>
+          <script>
+            document.getElementById('sad').onclick = function() {
+              fetchChinese('sad', document.getElementById('sad').innerHTML);
+              $('[data-toggle="tooltip"]').tooltip();}
+          </script>
+            
+              </br>
         </br>
             <h5>Independence</h5>
             <audio

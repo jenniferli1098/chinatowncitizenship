@@ -14,10 +14,10 @@ function cards($num, $conn) { ob_start(); ?>
                 <div class="flip-card d-block w-100">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <h1 class="question" style="padding: 100px;">Flashcards Instructions: <br /> Mouse over this card to flip.</h1>
+                      <h1 class="question">Flashcards Instructions: <br /> Mouse over this card to flip.</h1>
                     </div>
                     <div class="flip-card-back">
-                      <p class="answer" style="padding: 100px;">Use the left and right arrows to switch to another card.</p>
+                      <p class="answer">Use the left and right arrows to switch to another card.</p>
                     </div>
                   </div>
                 </div>
