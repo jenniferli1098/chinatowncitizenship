@@ -2,8 +2,7 @@
     include 'flashcards.php';
     include 'header.php';
     include 'review.php';
-    include_once '../access.php';
-?>
+    include_once '../access.php'; ?>
 <!DOCTYPE html>
 <?php echo head("Module 1")?>
 <header class="bg-primary text-white">
@@ -52,6 +51,6 @@
   those that have impacted our lives.", "Christmas is a religious holiday that has
   eventually become a national holiday.");
   $review = array($Geography, $People, $Flag, $Holidays);
-  rev($review) ?>
+  echo rev($review) ?>
 <?php echo foot()?>
 </html>
