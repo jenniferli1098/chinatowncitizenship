@@ -51,6 +51,7 @@
   those that have impacted our lives.", "Christmas is a religious holiday that has
   eventually become a national holiday.");
   $review = array($Geography, $People, $Flag, $Holidays);
-  echo rev($review) ?>
+  echo rev($review);
+  ?>
 <?php echo foot()?>
 </html>

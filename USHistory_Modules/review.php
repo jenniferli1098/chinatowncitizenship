@@ -1,6 +1,5 @@
 <?php
     include '../access.php';
-    include 'header.php';
 
 function rev($array) { ob_start(); ?>
     <html>
@@ -9,15 +8,15 @@ function rev($array) { ob_start(); ?>
       <div class="row">
         <div class="col-lg-8 mx-auto">
             <h3>Review</h3>
-            <p>Mouse over the English to view Chinese translations. (将鼠标悬停在英语上可以查看中文翻译。) </p>
-        </div>
-        <?php $incr = 1?>
+            <button type="button" class="btn btn-outline-secondary" onclick="conv()">Click to allow mouseover translations. (先点此按钮，然后将鼠标放在任何需要翻译的句子上.)</button>
+        </div>      
+        <?php $incr = 1;?>
         <?php foreach ($array as $topic){?>
             <div class="col-lg-8 mx-auto">
             <br></br>
             <h5><?php echo $topic[0]?></h5>
             <?php for ($i = 1; $i < count($topic); $i++) { ?>
-                <a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="test('<? echo $incr ?>')"><?php echo $topic[$i]?></a>
+                <a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[$i]?></a>
                 <?php $incr++; ?>
             <?php } ?>
             <br></br>
@@ -26,9 +25,10 @@ function rev($array) { ob_start(); ?>
       </div>  
     </div>
     <script>
-        function test(k) {
-            alert(document.getElementById(''+k).innerHTML);
-            fetchChinese(''+k, document.getElementById(''+k).innerHTML);
+        function conv(){
+            <?php for ($i = 1 ; $i < $incr ; $i++) { ?>
+                fetchChinese('<?php echo $i ?>', document.getElementById('<?php echo $i ?>').innerHTML);
+            <?php } ?>
             $('[data-toggle="tooltip"]').tooltip();
         }
     </script>

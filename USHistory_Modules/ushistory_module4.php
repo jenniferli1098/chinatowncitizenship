@@ -2,6 +2,8 @@
     include 'flashcards.php';
     include 'header.php';
     include_once '../access.php';
+    include 'review.php';
+
 ?>
 <!DOCTYPE html>
 
