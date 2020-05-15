@@ -8,11 +8,11 @@
 
   <?php echo head("Module 2")?>
 
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Colonial Period and Independence</h1>
-    </div>
-  </header>
+  <header style="background-image:url('../images/ushistory_banner.png')">
+  <div class="container text-center">
+    <h1 style = "font-family: 'Comfortaa', cursive;">Colonial Period and Independence</h1>
+  </div>
+</header>
 
   <?php echo cards(2, $conn)?>
 

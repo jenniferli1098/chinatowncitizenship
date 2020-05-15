@@ -9,11 +9,12 @@
 
 <?php echo head("Module 5")?>
 
-<header class="bg-primary text-white">
-    <div class="container text-center">
-        <h1>People</h1>
-    </div>
+<header style="background-image:url('../images/ushistory_banner.png')">
+  <div class="container text-center">
+    <h1 style = "font-family: 'Comfortaa', cursive;">People</h1>
+  </div>
 </header>
+
 <?php echo cards(5, $conn)?>
 <?php 
 $People = array("Other Important People",

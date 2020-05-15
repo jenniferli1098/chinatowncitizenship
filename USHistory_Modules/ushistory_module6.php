@@ -9,9 +9,9 @@
 
 <?php echo head("Module 6")?>
 
-<header class="bg-primary text-white">
+<header style="background-image:url('../images/ushistory_banner.png')">
   <div class="container text-center">
-    <h1>The 1800s</h1>
+    <h1 style = "font-family: 'Comfortaa', cursive;">The 1800s</h1>
   </div>
 </header>
 

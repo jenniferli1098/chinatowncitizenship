@@ -9,10 +9,10 @@
 
 <?php echo head("Module 3")?>
 
-<header class="bg-primary text-white">
-    <div class="container text-center">
-        <h1>The Constitution</h1>
-    </div>
+<header style="background-image:url('../images/ushistory_banner.png')">
+  <div class="container text-center">
+    <h1 style = "font-family: 'Comfortaa', cursive;">The Constitution</h1>
+  </div>
 </header>
 
 <?php echo cards(3, $conn)?>
