@@ -8,13 +8,16 @@ function rev($array) { ob_start(); ?>
       <div class="row">
         <div class="col-lg-8 mx-auto">
             <h3>Review</h3>
-            <button type="button" class="btn btn-outline-secondary" onclick="conv()">Click to allow mouseover translations. (先点此按钮，然后将鼠标放在任何需要翻译的句子上.)</button>
+            <div class="alert alert-secondary text-center" role="alert">
+            Click any text below to hear the text said aloud. (点击下面的句子，可以听到句子的英语发音.)
+            </div>
+            <button type="button" class="btn btn-outline-secondary" onclick="conv()" style="width:100%">Click to allow mouseover translations. (先点此按钮，然后将鼠标放在任何需要翻译的句子上.)</button>
             <br></br>
         </div>      
         <?php $incr = 1;?>
         <?php foreach ($array as $topic){?>
             <div class="col-lg-8 mx-auto">
-            <h5 data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[0]?></h5> <br>
+            <h5 data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="say('<? echo $incr ?>')"><?php echo $topic[0]?></h5> <br>
             <?php $incr++; ?>
             <ul>
             <?php for ($i = 1; $i < count($topic); $i++) { ?>
@@ -36,14 +39,19 @@ function rev($array) { ob_start(); ?>
         }
         function say( k ){
             var synth = window.speechSynthesis;
-            //alert("test");
-            var speech = new SpeechSynthesisUtterance( document.getElementById('sad'+k).innerHTML );
+            var speech = new SpeechSynthesisUtterance(document.getElementById(''+k).innerHTML);
             speech.lang = 'en-US';
-            //speech.voice = synth.getVoices()[0];
-            //alert(synth.getVoices());
             synth.speak(speech);
-
         }
     </script>
+        <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="float:right">
+            <img src="../images/translate.png">
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+            THIS SERVICE MAY CONTAIN TRANSLATIONS POWERED BY GOOGLE. GOOGLE DISCLAIMS ALL WARRANTIES RELATED TO THE TRANSLATIONS, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF ACCURACY, RELIABILITY, AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+            </div>
+        </div>
+    </section>
     </html>
 <?php return ob_get_clean(); } ?>

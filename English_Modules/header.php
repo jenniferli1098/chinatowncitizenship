@@ -1,6 +1,6 @@
 <?php
     include '../access.php';
-function foot() { ob_start() ; ?>}
+function foot() { ob_start() ; ?>
 <html> 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -41,6 +41,7 @@ function head($num) { ob_start(); ?>
         <meta name="author" content="">
 
         <title>English <?php echo $num ?></title>
+        <link rel="icon" href="../images/favicon.png">
 
         <!-- Bootstrap core CSS -->
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,9 +72,6 @@ function head($num) { ob_start(); ?>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="../ushistory.html">US History</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="../n400.html">N400</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="../other.html">Other Resources</a>
