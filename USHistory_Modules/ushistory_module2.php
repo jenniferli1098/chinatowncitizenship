@@ -2,6 +2,7 @@
     include 'flashcards.php';
     include 'header.php';
     include_once '../access.php';
+    include 'review.php';
 ?>
 <!DOCTYPE html>
 
@@ -14,6 +15,7 @@
   </header>
 
   <?php echo cards(2, $conn)?>
+
   <?php 
     $Colonial = array("Colonial Period","The British first came to America in the 1600s.", 
     "They came to America for many reasons: freedom, political liberty, religious freedom, economic opportunity, and to escape persecution.", 
@@ -31,9 +33,9 @@
     "The Declaration of Independence declared our independence from Great Britain and was adopted on July 4th, 1776.",
     "Today, we celebrate Independence Day on July 4th!",
     "The Declaration of Independence also guarantees 3 rights: life, liberty, and the pursuit of happiness.");
-
     $review = array($Colonial, $Independence);
-    echo rev($review);
-  ?>
+    echo rev($review);?>
+
   <?php echo foot()?>
+  
 </html>

@@ -4,14 +4,18 @@
     include 'review.php';
     include_once '../access.php'; ?>
 <!DOCTYPE html>
+
 <?php echo head("Module 1")?>
+
 <header class="bg-primary text-white">
   <div class="container text-center">
     <h1>What is America?</h1>
     <p class="lead">Geography: States, Oceans, Capitals, Presidents, National Holidays, the Flag</p>
   </div>
 </header>
+
 <?php echo cards(1, $conn)?>
+
 <?php 
   $Geography = array("Geography", "To the north of the United States, there is Canada. Thirteen US States border Canada, and these
   include Maine, New Hampshire, Vermont, New York, Pennsylvania, Ohio, Michigan, Minnesota, North Dakota,
@@ -51,7 +55,8 @@
   those that have impacted our lives.", "Christmas is a religious holiday that has
   eventually become a national holiday.");
   $review = array($Geography, $People, $Flag, $Holidays);
-  echo rev($review);
-  ?>
+  echo rev($review); ?>
+
 <?php echo foot()?>
+
 </html>

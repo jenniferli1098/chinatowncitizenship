@@ -14,11 +14,14 @@ function rev($array) { ob_start(); ?>
         <?php foreach ($array as $topic){?>
             <div class="col-lg-8 mx-auto">
             <br></br>
-            <h5><?php echo $topic[0]?></h5>
+            <h5 data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[0]?></h5> <br>
+            <?php $incr++; ?>
+            <ul>
             <?php for ($i = 1; $i < count($topic); $i++) { ?>
-                <a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[$i]?></a>
+                <li><a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[$i]?></a>
                 <?php $incr++; ?>
             <?php } ?>
+            </ul>
             <br></br>
             </div>
         <?php } ?>
