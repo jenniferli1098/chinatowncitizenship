@@ -1,3 +1,4 @@
+
 body {
   padding-top: 56px;
 }
@@ -111,7 +112,6 @@ h6{
 
 .dots {
   position: relative;
-  display: inline-block;
 }
 
 .dots:hover {
@@ -296,7 +296,6 @@ input[type=text] {
 
 
 ul,ol {
-  margin:0;
   padding: 20px;
 }
 
