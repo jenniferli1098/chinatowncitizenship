@@ -18,25 +18,43 @@ function fetchChinese(idchange, str) {
     xhttp.send();
 }
 
+
+
 function fetchSpeech(str) {
     const request = {
 
-        input: {text: str},
+        "input": {"text": "str"},
     
-        voice: {languageCode: 'en-US', ssmlGender: 'NEUTRAL'},
+        "voice": {"languageCode": 'en-US', "ssmlGender": 'NEUTRAL'},
     
-        audioConfig: {audioEncoding: 'MP3'},
+        "audioConfig": {"audioEncoding": 'MP3'}
     
     };
 
     var xhttp = new XMLHttpRequest();
     let url = "https://texttospeech.googleapis.com/v1/text:synthesize/key="+apiKey;
-    xhr.open("POST", url, true);
+    xhttp.open("POST", url, true);
     xhttp.send(request);
+
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            
+            alert("hi");
+            myObj = JSON.parse(this.responseText);
+            alert(myObj.audioContent);
+        } else if (this.readyState == 4) {
+            alert(this.status);
+            myObj = JSON.parse(this.responseText);
+            alert(myObj.audioContent);
+        }
+        else {
+            alert("erroe");
+        }
+    };
     
 }
 
-fetchSpeech("hello this is chinatown citizenship");
+say("hello this is chinatown citizenship");
 /*
 
 const projectId = 'articulate-case-277023';

@@ -18,7 +18,7 @@ function rev($array) { ob_start(); ?>
             <?php $incr++; ?>
             <ul>
             <?php for ($i = 1; $i < count($topic); $i++) { ?>
-                <li><a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[$i]?></a></li>
+                <li><a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="say('<? echo $incr ?>')"><?php echo $topic[$i]?></a></li>
                 <?php $incr++; ?>
             <?php } ?>
             </ul>
@@ -33,6 +33,16 @@ function rev($array) { ob_start(); ?>
                 fetchChinese('<?php echo $i ?>', document.getElementById('<?php echo $i ?>').innerHTML);
             <?php } ?>
             $('[data-toggle="tooltip"]').tooltip();
+        }
+        function say( k ){
+            var synth = window.speechSynthesis;
+            //alert("test");
+            var speech = new SpeechSynthesisUtterance( document.getElementById('sad'+k).innerHTML );
+            speech.lang = 'en-US';
+            //speech.voice = synth.getVoices()[0];
+            //alert(synth.getVoices());
+            synth.speak(speech);
+
         }
     </script>
     </html>

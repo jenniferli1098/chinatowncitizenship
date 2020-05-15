@@ -293,14 +293,16 @@
           <p>Mouse over the English to view Chinese translations. (将鼠标悬停在英语上可以查看中文翻译。) </p>
         </div>
         <div class="col-lg-8 mx-auto">
+          <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
+          <input onclick="responsiveVoice.speak('This is the text you want to speak');" type='button' value='🔊 Play' />
           <h5>Geography</h5>
           <audio
           controls
           src="audio/geography.mp3">
           </audio>
           <a data-toggle="tooltip"
-            title="" id="sad1" onclick="test('1');"
+            title="" id="sad1" onclick="say('1');"
             class="dots">To the north of the United States, there is Canada. Thirteen US States border Canada, and these
             include Maine, New Hampshire, Vermont, New York, Pennsylvania, Ohio, Michigan, Minnesota, North Dakota,
             Montana, Idaho, Washington, and Alaska. </a>
@@ -326,10 +328,20 @@
             function test(k) {
               //alert("hi");
               
-              alert(document.getElementById('sad'+k).innerHTML);
+              //alert(document.getElementById('sad'+k).innerHTML);
               fetchChinese('sad'+k, document.getElementById('sad'+k).innerHTML);
               $('[data-toggle="tooltip"]').tooltip();
               
+            };
+            function say( k ){
+                var synth = window.speechSynthesis;
+                //alert("test");
+                var speech = new SpeechSynthesisUtterance( document.getElementById('sad'+k).innerHTML );
+                speech.lang = 'en-US';
+                //speech.voice = synth.getVoices()[0];
+                //alert(synth.getVoices());
+                synth.speak(speech);
+
             }
           </script>
 
