@@ -27,7 +27,7 @@
   "Serve in the US Military", "Serve the nation", "Be loyal to the US.");
   $dem = array("Ways to Participate in the Democracy", "Vote", "Join a political party", "Help with a campaign", "Join a civic group", "Join a community group", 
   "Give an elected official your opinion on an issue", "Call Senators and Representatives", "Run for office", "Write to a newspaper");
-  $review = array($rights);
+  $review = array($rights, $resp, $promise, $dem);
   echo rev($review);?>
 
 <?php echo foot()?>

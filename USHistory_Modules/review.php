@@ -9,11 +9,11 @@ function rev($array) { ob_start(); ?>
         <div class="col-lg-8 mx-auto">
             <h3>Review</h3>
             <button type="button" class="btn btn-outline-secondary" onclick="conv()">Click to allow mouseover translations. (先点此按钮，然后将鼠标放在任何需要翻译的句子上.)</button>
+            <br></br>
         </div>      
         <?php $incr = 1;?>
         <?php foreach ($array as $topic){?>
             <div class="col-lg-8 mx-auto">
-            <br></br>
             <h5 data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[0]?></h5> <br>
             <?php $incr++; ?>
             <ul>

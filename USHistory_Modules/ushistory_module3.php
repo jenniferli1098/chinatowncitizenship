@@ -28,13 +28,13 @@
     "Changes to the Constitution are considered amendments.",
     "The first ten of these amendments are called The Bill of Rights.",
     "The first amendment includes the freedoms of speech, religion, assembly, press, and petition the government.",
-    "The freedom of religion guaranteed in the first amendment states that you can practice any religion or not practice a religion.");
+    "The freedom of religion guaranteed in the first amendment states that you can practice any religion or not practice a religion.",
+    "There are a total of 27 amendments. 4 of these 27 are about who can vote.");
     $WhoVotes = array("Who Can Vote?",
-    "There are a total of 27 amendments. 4 of these 27 are about who can vote.",
-    "1. The twenty-sixth amendment states that citizens 18 and older can vote.", 
-    "2. The twenty-fourth amendment states that you don't have to pay to vote.", 
-    "3. The nineteenth amendment states that any citizen can vote (women and men can both vote).", 
-    "4. The fifteenth amendment states that a male citizen of any race can vote."
+    "The twenty-sixth amendment states that citizens 18 and older can vote.", 
+    "The twenty-fourth amendment states that you don't have to pay to vote.", 
+    "The nineteenth amendment states that any citizen can vote (women and men can both vote).", 
+    "The fifteenth amendment states that a male citizen of any race can vote."
     );
     $System = array("Systems of the United States", "The economic system of the US is a capitalist or market economy.",
     "The 'rule of law' states that everyone must follow the law, including the president, all leaders, and in general, all people." );
