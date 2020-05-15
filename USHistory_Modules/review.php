@@ -18,7 +18,7 @@ function rev($array) { ob_start(); ?>
             <?php $incr++; ?>
             <ul>
             <?php for ($i = 1; $i < count($topic); $i++) { ?>
-                <li><a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[$i]?></a>
+                <li><a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>"><?php echo $topic[$i]?></a></li>
                 <?php $incr++; ?>
             <?php } ?>
             </ul>
