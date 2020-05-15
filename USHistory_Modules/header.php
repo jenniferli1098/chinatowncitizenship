@@ -44,6 +44,8 @@ function head($num) { ob_start(); ?>
 
         <!-- Bootstrap core CSS -->
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
 
         <!-- Custom styles for this template -->
         <link href="../css/custom.css" rel="stylesheet">

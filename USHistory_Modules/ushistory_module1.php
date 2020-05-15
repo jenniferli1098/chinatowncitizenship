@@ -7,10 +7,10 @@
 
 <?php echo head("Module 1")?>
 
-<header class="bg-primary text-white">
+<header style="background-image:url('../images/ushistory_banner.png')">
   <div class="container text-center">
-    <h1>What is America?</h1>
-    <p class="lead">Geography: States, Oceans, Capitals, Presidents, National Holidays, the Flag</p>
+    <h1 style = "font-family: 'Comfortaa', cursive;">What is America?</h1>
+    <p class="lead" style = "font-family: 'Comfortaa', cursive;">Geography: States, Oceans, Capitals, Presidents, National Holidays, the Flag</p>
   </div>
 </header>
 

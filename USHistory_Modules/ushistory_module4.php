@@ -9,11 +9,12 @@
 
 <?php echo head("Module 4")?>
 
-<header class="bg-primary text-white">
-    <div class="container text-center">
-        <h1>System of Government</h1>
-    </div>
+<header style="background-image:url('../images/ushistory_banner.png')">
+  <div class="container text-center">
+    <h1 style = "font-family: 'Comfortaa', cursive;">System of Government</h1>
+  </div>
 </header>
+
 <?php echo cards(4, $conn)?>
 
 <?php 
