@@ -17,12 +17,6 @@ function foot() { ob_start() ; ?>}
     <!-- Plugin JavaScript -->
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-
     </body>
 </html>
 <?php return ob_get_clean(); } 
@@ -50,14 +44,14 @@ function head($num) { ob_start(); ?>
 
         <!-- Bootstrap core CSS -->
         <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
 
         <!-- Custom styles for this template -->
         <link href="../css/custom.css" rel="stylesheet">
 
         <!-- Flashcard JS -->
         <script src="../source.js"></script>
-        <script type="text/javascript" src="../attempts.js"></script>
-        <script type="text/javascript" src="../another_attempt.js"></script>
+        <script type="text/javascript" src="../apicalls.js"></script>
 
     </head>
 

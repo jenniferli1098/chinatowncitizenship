@@ -5,12 +5,14 @@
     include_once '../access.php'; ?>
 <!DOCTYPE html>
 <?php echo head("Module 1")?>
-<header class="bg-primary text-white">
+
+<header style="background-image:url('../images/english_banner.png')">
   <div class="container text-center">
-    <h1>Numbers and Dates</h1>
-    <p class="lead">Ordinal and Cardinal Numbers</p>
+    <h1 style = "font-family: 'Comfortaa', cursive;">Numbers and Dates</h1>
+    <p class="lead" style = "font-family: 'Comfortaa', cursive;">Ordinal and Cardinal Numbers</p>
   </div>
 </header>
+
 <?php echo cards(1, $conn)?>
 <?php 
   $Cardinal = array("Cardinal Numbers","One","Eleven","Thirty","Two","Twelve","Forty","Three","Thirteen","Fifty","Four","Fourteen","Sixty","Five","Fifteen","Seventy","Six","Sixteen","Eighty","Seven","Seventeen","Ninety","Eight","Eighteen","One Hundred","Nine","Nineteen","One Thousand","Ten","Twenty","One Million");

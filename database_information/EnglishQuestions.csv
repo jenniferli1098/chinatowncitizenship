@@ -51,3 +51,39 @@ How long have you lived there?,I have lived there for a year,I have lived here f
 How is the weather today?,It is sunny,The weather is great,It is windy,It is happy,,,,3
 How is the weather today?,It is raining,It is windy,The weather is bad,The weather is snowing,,,,3
 How did you come here today?,I took the subway,I took a bus,I came by car,I come here by a bus,I go by train,,,3
+二十七,Twenty-seven,,,Twenty-seventh,,,,1
+第二十三,Twenty-third,,,Twenty-three,Thirty-two,Thirty-second,,1
+January,一月,,,三月,四月,,,1
+March,三月,,,一月,四月,,,1
+出生日期,Birthday,,,Anniversary,Date,Day,,1
+Brown,棕色的,,,黑色的,,,,4
+Black,黑色的,,,棕色的,,,,4
+Hair,头发,,,眼睛,耳朵,,,4
+Eyes,眼睛,,,头发,耳朵,,,4
+Children,孩子,,,父母,孙子,,,4
+Grandchildren,孙子,,,父母,孩子,,,4
+How tall are you?,"I am 5 feet, 2 inches tall",,,I weigh 100 pounds,My eyes are brown.,My hair is white.,,4
+How many children do you have?,你有几个孩子,,,你有几个孙子,你有几个女儿,你有几个儿子,,4
+Foodstamp,食物票,,,工作,积蓄,社会福利,,5
+Tax,税,,,工作,积蓄,社会福利,,5
+Welfare,社会福利,,,工作,积蓄,食物票,,5
+Savings,积蓄,,,工作,食物票,社会福利,,5
+Job,工作,,,食物票,积蓄,社会福利,,5
+How do you support yourself?,My children support me.,I am on welfare., I have a job.,Yes,I pay my taxes,,,5
+Social Security Number,社会安全号码,,,家人,永久居民,旅游,,6
+Permanent Resident,永久居民,,,社会安全号码,家人,旅游,,6
+Vacation,旅游,,,社会安全号码,永久居民,家人,,6
+Family,家人,,,社会安全号码,永久居民,旅游,,6
+America,美国,,,加拿大,中国,英国,,6
+China,中国,,,美国,加拿大,英国,,6
+England,英国,,,美国,中国,加拿大,,6
+Canada,加拿大,,,美国,中国,英国,,6
+North America,北美,,,美国,中国,英国,,6
+Do you miss anything about China?,I miss my family.,I miss the food.,"No, I do not miss anything.",I like to travel,The air is good,I want to sponsor my family to come to America,,6
+Why do you want to be an American citizen?,To travel with a U.S. passport.,To obtain federal government jobs.,To get social security benefits.,I miss the food., My son.,I have been a permanent resident for 8 years.,,6
+Left,左,,,右,做得好,,,8
+Right,右,,,左,做得好,,,8
+Corridor,走廊,,,楼梯,电梯,,,8
+Wait,Wait,,,走,站起来,,,8
+Wrong,错了,,,对,做得好,,,8
+表示考官没有听清楚你刚说的话所以想让你重复一遍.,Pardon,Excuse me?,Can you repeat that?,I do not understand,Can you translate that?,,,8
