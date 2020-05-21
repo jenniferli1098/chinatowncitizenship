@@ -1,6 +1,7 @@
 <?php
     include '../access.php';
 function foot() { ob_start() ; ?>
+<html> 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
@@ -84,4 +85,5 @@ function head($num) { ob_start(); ?>
             </div>
         </nav>
 
+  </html>
 <?php return ob_get_clean(); } ?>

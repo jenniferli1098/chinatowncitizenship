@@ -2,7 +2,6 @@
     include '../access.php';
 
 function cards($num, $conn) { ob_start(); ?>
-    <html>
     <section id="flashcard">
     <div class="container">
       <div class="row">
@@ -69,5 +68,4 @@ function cards($num, $conn) { ob_start(); ?>
       </div>
     </div>
   </section>
-  </html>
 <?php return ob_get_clean(); } ?>
