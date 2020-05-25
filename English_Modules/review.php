@@ -16,14 +16,12 @@ function rev($array) { ob_start(); ?>
         <?php $incr = 1;?>
         <?php foreach ($array as $topic){?>
             <div class="col-lg-8 mx-auto">
-            <h5 data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="say('<? echo $incr ?>')"><?php echo $topic[0]?></h5> <br>
+            <h5 data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="say('<? echo $incr ?>')"><?php echo $topic[0]?></h5><br>
             <?php $incr++; ?>
-            <ul>
             <?php for ($i = 1; $i < count($topic); $i++) { ?>
-                <li><a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="say('<? echo $incr ?>')"><?php echo $topic[$i]?></a></li>
+                <a data-toggle="tooltip" title="" class="dots" id="<? echo $incr ?>" onclick="say('<? echo $incr ?>')"><?php echo $topic[$i]?></a><br>
                 <?php $incr++; ?>
             <?php } ?>
-            </ul>
             <br></br>
             </div>
         <?php } ?>
