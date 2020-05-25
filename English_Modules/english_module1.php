@@ -13,6 +13,8 @@
   </div>
 </header>
 
+<?php echo cards(1, $conn)?>
+
 <section id="Review" class="bg-light">
     <div class="container">
       <div class="row">

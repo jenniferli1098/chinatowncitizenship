@@ -2,7 +2,6 @@
     include '../access.php';
 
 function rev($array) { ob_start(); ?>
-    <html>
     <section id="Review" class="bg-light">
     <div class="container">
       <div class="row">
@@ -28,6 +27,14 @@ function rev($array) { ob_start(); ?>
             <br></br>
             </div>
         <?php } ?>
+        <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="float:right">
+            <img src="../images/translate.png">
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+            THIS SERVICE MAY CONTAIN TRANSLATIONS POWERED BY GOOGLE. GOOGLE DISCLAIMS ALL WARRANTIES RELATED TO THE TRANSLATIONS, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF ACCURACY, RELIABILITY, AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+            </div>
+        </div>
       </div>  
     </div>
     <script>
@@ -44,14 +51,5 @@ function rev($array) { ob_start(); ?>
             synth.speak(speech);
         }
     </script>
-        <button class="btn btn-light btn-xs" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="float:right">
-            <img src="../images/translate.png">
-        </button>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-            THIS SERVICE MAY CONTAIN TRANSLATIONS POWERED BY GOOGLE. GOOGLE DISCLAIMS ALL WARRANTIES RELATED TO THE TRANSLATIONS, EXPRESS OR IMPLIED, INCLUDING ANY WARRANTIES OF ACCURACY, RELIABILITY, AND ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-            </div>
-        </div>
     </section>
-    </html>
 <?php return ob_get_clean(); } ?>
