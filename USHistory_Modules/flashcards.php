@@ -14,7 +14,6 @@ function cards($num, $conn) { ob_start(); ?>
                   Flashcards Instructions: <br /> Click this card to flip.
                 </button>
               </div>
-            </div>
             <?php
               $sql = "SELECT * FROM USHistory WHERE Unit = $num";
               $result = mysqli_query($conn, $sql);

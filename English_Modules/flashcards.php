@@ -14,8 +14,8 @@ function cards($num, $conn) { ob_start(); ?>
                   Flashcards Instructions: <br /> Click this card to flip.
                 </button>
               </div>
-            </div>
             <?php
+              $sql = mysqli_query($conn, "SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
               $sql = "SELECT * FROM English WHERE Unit = $num";
               $result = mysqli_query($conn, $sql);
               $datas = array();
