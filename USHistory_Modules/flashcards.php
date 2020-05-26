@@ -39,7 +39,7 @@ function cards($num, $conn) { ob_start(); ?>
                         $ans = $ans . ", " . $data[$answer]; }; 
                   }; ?>
                 <div class="carousel-item active" >
-                <button class="btn flashcard" onclick="switchFlash()" id="card1" answer="<?php echo $ans ?>" question="<?php echo $data['Question']; ?>">
+                <button class="btn flashcard" onclick="switchFlash('<?php echo $i ?>')" id="card<?php echo $i ?>" answer="<?php echo $ans ?>" question="<?php echo $data['Question']; ?>">
                 <?php echo $data['Question']; ?>
                 </button>
               </div>
