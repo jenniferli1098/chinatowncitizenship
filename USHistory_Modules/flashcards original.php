@@ -38,11 +38,18 @@ function cards($num, $conn) { ob_start(); ?>
                       <?php if ($data[$answer] != "") { 
                         $ans = $ans . ", " . $data[$answer]; }; 
                   }; ?>
-                <div class="carousel-item active" >
-                <button class="btn flashcard" onclick="switchFlash()" id="card1" answer="<?php echo $ans ?>" question="<?php echo $data['Question']; ?>">
-                <?php echo $data['Question']; ?>
-                </button>
-              </div>
+                <div class="carousel-item">
+                  <div class="flip-card d-block w-100">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 class="question" style="padding: 100px;"><?php echo $data['Question']; ?></h1>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="answer" style="padding: 120px;"><?php echo $ans ?></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             <?php $i+=1; }; ?>
             </div>
 
@@ -61,19 +68,4 @@ function cards($num, $conn) { ob_start(); ?>
       </div>
     </div>
   </section>
-  <script>
-    function switchFlash(k) {
-      var element = document.getElementById('card'+k);
-      //alert(element.innerHTML);
-      if (element.innerHTML == element.getAttribute('answer')) {
-        element.innerHTML = element.getAttribute('question');
-        element.style.backgroundColor = "#f5f5f5";
-        element.style.color = "#0275d8";
-      } else {
-        element.innerHTML = element.getAttribute('answer');
-        element.style.backgroundColor = "#0275d8";
-        element.style.color = "#f5f5f5";
-      }
-    }
-  </script>
 <?php return ob_get_clean(); } ?>
