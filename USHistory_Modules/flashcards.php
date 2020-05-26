@@ -13,7 +13,7 @@ function cards($num, $conn) { ob_start(); ?>
                 <div class="flip-card d-block w-100">
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <h1 class="question">Flashcards Instructions: <br /> Mouse over this card to flip.</h1>
+                      <h1 class="question">Flashcards Instructions: <br /> Click this card to flip.</h1>
                     </div>
                     <div class="flip-card-back">
                       <p class="answer">Use the left and right arrows to switch to another card.</p>
@@ -38,11 +38,11 @@ function cards($num, $conn) { ob_start(); ?>
                       <?php if ($data[$answer] != "") { 
                         $ans = $ans . ", " . $data[$answer]; }; 
                   }; ?>
-                <div class="carousel-item active" >
+                <div class="carousel-item" >
                 <button class="btn flashcard" onclick="switchFlash('<?php echo $i ?>')" id="card<?php echo $i ?>" answer="<?php echo $ans ?>" question="<?php echo $data['Question']; ?>">
                 <?php echo $data['Question']; ?>
                 </button>
-              </div>
+                </div>
             <?php $i+=1; }; ?>
             </div>
 
