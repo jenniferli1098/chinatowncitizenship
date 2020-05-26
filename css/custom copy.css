@@ -38,15 +38,12 @@ h6{
   height: 300px;
   text-align: center;
   vertical-align: middle;
+  line-height: 50px;
   /*font-size:2vw;*/
-  padding-top: auto;
-  padding-bottom: auto;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-size: 125%;
+  padding: 100px;
   background-color: #f5f5f5;
   color: #0275d8;
-  font-family: 'Roboto', sans-serif;
+
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */

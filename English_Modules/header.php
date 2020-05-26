@@ -48,6 +48,7 @@ function head($num) { ob_start(); ?>
 
         <!-- Custom styles for this template -->
         <link href="../css/custom.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
         <!-- Flashcard JS -->
         <script src="../source.js"></script>

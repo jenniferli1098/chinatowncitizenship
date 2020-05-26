@@ -53,6 +53,7 @@ function head($num) { ob_start(); ?>
         <!-- Flashcard JS -->
         <script src="../source.js"></script>
         <script type="text/javascript" src="../apicalls.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     </head>
 
