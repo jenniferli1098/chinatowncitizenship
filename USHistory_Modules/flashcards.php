@@ -10,17 +10,11 @@ function cards($num, $conn) { ob_start(); ?>
           <div id="flashCardControls" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="flip-card d-block w-100">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <h1 class="question">Flashcards Instructions: <br /> Click this card to flip.</h1>
-                    </div>
-                    <div class="flip-card-back">
-                      <p class="answer">Use the left and right arrows to switch to another card.</p>
-                    </div>
-                  </div>
-                </div>
+                <button class="btn flashcard" onclick="switchFlash('')" id="card" answer="Use the left and right arrows to switch to another card." question="Flashcards Instructions: Click this card to flip.">
+                  Flashcards Instructions: <br /> Click this card to flip.
+                </button>
               </div>
+            </div>
             <?php
               $sql = "SELECT * FROM USHistory WHERE Unit = $num";
               $result = mysqli_query($conn, $sql);

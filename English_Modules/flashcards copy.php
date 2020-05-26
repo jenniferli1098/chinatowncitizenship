@@ -2,6 +2,7 @@
     include '../access.php';
 
 function cards($num, $conn) { ob_start(); ?>
+    <html>
     <section id="flashcard">
     <div class="container">
       <div class="row">
@@ -10,12 +11,19 @@ function cards($num, $conn) { ob_start(); ?>
           <div id="flashCardControls" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <button class="btn flashcard" onclick="switchFlash('')" id="card" answer="Use the left and right arrows to switch to another card." question="Flashcards Instructions: Click this card to flip.">
-                  Flashcards Instructions: <br /> Click this card to flip.
-                </button>
+                <div class="flip-card d-block w-100">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <h1 class="question">Flashcards Instructions: <br /> Mouse over this card to flip.</h1>
+                    </div>
+                    <div class="flip-card-back">
+                      <p class="answer">Use the left and right arrows to switch to another card.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
             <?php
+              $sql = mysqli_query($conn, "SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
               $sql = "SELECT * FROM English WHERE Unit = $num";
               $result = mysqli_query($conn, $sql);
               $datas = array();
@@ -32,10 +40,17 @@ function cards($num, $conn) { ob_start(); ?>
                       <?php if ($data[$answer] != "") { 
                         $ans = $ans . ", " . $data[$answer]; }; 
                   }; ?>
-                <div class="carousel-item" >
-                <button class="btn flashcard" onclick="switchFlash('<?php echo $i ?>')" id="card<?php echo $i ?>" answer="<?php echo $ans ?>" question="<?php echo $data['Question']; ?>">
-                <?php echo $data['Question']; ?>
-                </button>
+                <div class="carousel-item">
+                  <div class="flip-card d-block w-100">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <h1 class="question" style="padding: 100px;"><?php echo $data['Question']; ?></h1>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="answer" style="padding: 120px;"><?php echo $ans ?></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             <?php $i+=1; }; ?>
             </div>
@@ -55,19 +70,5 @@ function cards($num, $conn) { ob_start(); ?>
       </div>
     </div>
   </section>
-  <script>
-    function switchFlash(k) {
-      var element = document.getElementById('card'+k);
-      //alert(element.innerHTML);
-      if (element.innerHTML == element.getAttribute('answer')) {
-        element.innerHTML = element.getAttribute('question');
-        element.style.backgroundColor = "#f5f5f5";
-        element.style.color = "#0275d8";
-      } else {
-        element.innerHTML = element.getAttribute('answer');
-        element.style.backgroundColor = "#0275d8";
-        element.style.color = "#f5f5f5";
-      }
-    }
-  </script>
+  </html>
 <?php return ob_get_clean(); } ?>
