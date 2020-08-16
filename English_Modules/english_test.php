@@ -61,6 +61,7 @@
     <br/>
     <p> Below are 10 multiple choice questions. Select a correct answer (there can be more than one). </p>
     <p>If your answer is incorrect, the answer choice will become red. Try again!</p>
+    <br>
     <?php
     $sql = mysqli_query($conn, "SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
     $sql = "SELECT * FROM English\n"
