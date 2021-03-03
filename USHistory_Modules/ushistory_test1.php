@@ -10,19 +10,19 @@
   <header class="bg-primary text-white">
     <div class="container text-center">
       <h1>US History Test</h1>
-      <p class="lead">This test consists of 10 questions randomly pulled out of a test bank! Refresh to get a new set of 10 questions.</p>
+      <p class="lead">This test consists of 20 questions randomly pulled out of a test bank! Refresh to get a new set of 20 questions.</p>
     </div>
   </header>
   <!-- Page Content -->
   <div class="container">
     <br/>
-    <p> Below are 10 multiple choice questions. Select a correct answer (there can be more than one). </p>
+    <p> Below are 20 multiple choice questions. Select a correct answer (there can be more than one). </p>
     <p>If your answer is incorrect, the answer choice will become red. Try again!</p>
     <br>
     <?php
     $sql = "SELECT * FROM USHistory\n"
     . "ORDER BY RAND()\n"
-    . "LIMIT 10";
+    . "LIMIT 20";
     $result = mysqli_query($conn, $sql);
     $datas = array();
     if (mysqli_num_rows($result) > 0){

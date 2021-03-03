@@ -26,7 +26,7 @@ $People = array("Other Important People",
 "Dwight D. Eisenhower: President of the United States, War Hero from World War II",
 "Martin Luther King, Jr.: Fought for Civil Rights, Worked for Equality for all Americans",
 "Nancy Pelosi: Current Speaker of the House of Representatives",
-"Donald Trump: Current President of the United States, Member of the Republican Party");
+"Joe Biden: Current President of the United States, Member of the Democratic Party");
 $review = array($People);
 echo rev($review);?>
 

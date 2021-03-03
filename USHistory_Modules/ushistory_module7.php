@@ -11,23 +11,24 @@
 
 <header style="background-image:url('../images/ushistory_banner.png')">
   <div class="container text-center">
-    <h1 style = "font-family: 'Comfortaa', cursive;">The 1900s - Present</h1>
+    <h1 style = "font-family: 'Comfortaa', cursive;">Rights & Responsibilities</h1>
   </div>
 </header>
 
 <?php echo cards(7, $conn)?>
 
 <?php 
-$hist1900 = array("1900s",
-"1914-1919: World War I - America joined the War in 1918, and Woodrow Wilson was president during this war.",
-"1939-1945: World War II - America joined the War in 1941, after the Japanese bombed Pearl Harbor. We fought Japan, Germany, and Italy. Franklin Roosevelt was president during this war, and Dwight D. Eisenhower, a future president, was a war hero during this war.",
-"1950-1953: Korean War - The Korean War was a proxy war for the Cold War, where America fought the spread of communism.",
-"1955-1975: Vietnam War - The Vietnam War was another proxy war for the Cold War.",
-"1960s: Civil Rights Movement - This movement was a struggle by African Americans to end legalized racial discrimination and racial segregation in the US.",
-"1990-1991: Gulf War - The Gulf War was a war by 35 nations in response to Iraq invading and annexing Kuwait."
-);
-$review = array($hist1900);
-echo rev($review);?>
+  $rights = array("Rights", "Rights for EVERYONE include the freedom of expression, speech, assembly, petition the government, religion, and to bear arms.",
+  "Rights for CITIZENS only also include the ability to vote in a federal election or run for federal office.");
+  $resp = array("Responsibilities", "EVERYONE must send in federal income tax forms by April 15th.",
+  "Responsibilities for citizens also include serving on a jury voting in a federal election (you must be 18 or older to vote), saying the Pledge of Allegiance to the Flag.",
+  "Additionally, all men who are citizens must register for the Selective Service at age 18, between 18 and 26.");
+  $promise = array("Promises Citizens make to the US", "Stop loyalty to other countries", "Defend the US Constitution and its laws", "Obey the laws of the US",
+  "Serve in the US Military", "Serve the nation", "Be loyal to the US.");
+  $dem = array("Ways to Participate in the Democracy", "Vote", "Join a political party", "Help with a campaign", "Join a civic group", "Join a community group", 
+  "Give an elected official your opinion on an issue", "Call Senators and Representatives", "Run for office", "Write to a newspaper");
+  $review = array($rights, $resp, $promise, $dem);
+  echo rev($review);?>
 
 <?php echo foot()?>
 
