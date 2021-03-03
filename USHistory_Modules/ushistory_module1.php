@@ -29,8 +29,8 @@
   United States, and each state has its own capital. The capital of Massachusetts is Boston.", "In the state of New York, on Liberty Island,
   there is the Statue of Liberty.");
   $People = array("People", "In China, the current president
-  is Xi Jinping. In America, the current president is Donald Trump.", "The Vice President is below the
-  President. When the President can no longer serve, the Vice President becomes President.", "The current Vice President is Mike Pence.", "Similar to how there is a
+  is Xi Jinping. In America, the current president is Joe Biden.", "The Vice President is below the
+  President. When the President can no longer serve, the Vice President becomes President.", "The current Vice President is Kamala Harris.", "Similar to how there is a
   president of the United States, there is also a leader of each state. This person is called the
   governor.", "Since there are
   fifty states, there are fifty governors in the US. The governor of Massachusetts is Charlie Baker.");
